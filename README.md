@@ -13,4 +13,4 @@ Site includes Bootstrap4 responsive styling, header, footer, and Nav menu
 4.  Menu page shows the menu items in a table format, using GET in the Heroku API.  Note that no token is required in the 
     GET, as it should be publically accessible and doesn't modify the collection. 
 
-5. the backend is a Heroku app provide by DU,  rmagill and ICT4510@pp will get you logged in on admin page (not a secret)
+5. the backend is a Heroku app provide by DU, so to login you need you own API or a mock
