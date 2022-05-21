@@ -14,3 +14,5 @@ Site includes session storage, JWT token usage, Promises, Fetch, Bootstrap4 resp
     GET, as it should be publically accessible and doesn't modify the collection. 
 
 5. the backend is a Heroku app provide by DU, so to login you need you own API or a mock
+
+IDE: VSCode
