@@ -2,7 +2,7 @@
 A fake restaurant application in vanilla JS
 
 This code has:  
-Site includes Bootstrap4 responsive styling, header, footer, and Nav menu
+Site includes session storage, JWT token usage, Promises, Fetch, Bootstrap4 responsive styling, header, footer, and Nav menu
 1.  Home page includes Carousel image control with photos
 2.  About page includes a map using Mapbox and Leaflet.js css and js references
 3.  Admin page includes Login, Logout, deleteMenuItem() and addMenuItem() functions. 
