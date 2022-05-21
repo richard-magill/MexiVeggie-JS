@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8" />
+    <title>MexiVeggie About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style></style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">    
+    <style></style>
+  </head>
+  <body>
+  <wrapper class="d-flex flex-column">
+        <div class ="container" class="header" id = "header"><h1>MexiVeggie<h4>Unbelievably Tasty Mexican Food, 100% Vegan</h4></h1></div>
+            <div class="nav" class ="container" >
+                <a class="button" href="Home.html">Home</a>
+                <a class="button" href="Menu.html" >Menu</a>
+                <a class="button button-primary" href="About.html">About</a>
+                <a class="button" href="Login.html">Admin</a>       
+            </div>  
+      <form>
+          <div class ="container">
+              <h4>For takeout orders, call us at (555) 555-5555.  Better yet, come on down and visit!  We are open 6 AM to 8PM daily. Here is our location:</h4>
+            </div>            
+            <div id="map"></div>
+
+      </form>       
+    <footer class="container-fluid w-100 bg-dark text-light py-3">
+        <div id="footer">
+            <h6>Rich Magill, 2022   University of Denver ICT 4510 Portfolio Assignment</h6>
+        </div>
+    </footer>
+  </wrapper>
+    <script>
+      var map = L.map('map').setView([39.678121, -104.961753], 15);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 20,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1Ijoicm1hZ2lsbCIsImEiOiJja3phaXZueGMxN280MnZtbTVyZ3MzdHE4In0.Zvwus7E6TGfehDoYluP36A'    
+      }).addTo(map);
+      var marker = L.marker([39.678121, -104.961753]).addTo(map);
+    </script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  
+  </body>
+
+</html>
